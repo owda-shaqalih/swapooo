@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>SWAPOOO</title>
+	<!-- Stylesheets -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="css/animate.min.css">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+	<link href="css/all.css" rel="stylesheet">
+	<link href="css/owl.carousel.min.css" rel="stylesheet">
+	<link href="css/owl.theme.default.min.css" rel="stylesheet">
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.structure.min.css">
+	<link rel="stylesheet" href="plugins/jquery-ui/jquery-ui.theme.css">
+	<link href="css/select2.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<!-- Responsive -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link href="css/responsive.css" rel="stylesheet">
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <script src="js/jquery-1.12.2.min.js"></script>
+</head>
+<body>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div id="ctn-preloader" class="ctn-preloader">
+			<div class="animation-preloader">
+				<div class="spinner"></div>
+			</div>	
+		</div>
+	</div>
+	<div id="search">
+        <button type="button" class="search_close"><i class="fal fa-times"></i></button>
+        <div class="center-screen">
+	        <form action="#" class="form_search" method="get">
+	        	<div class="head_search_title">
+	        		<h2>Search</h2>
+	        		<p>Cars,  electronics, furniture,..  anything!</p>
+	        	</div>
+				<div class="form-group form_search_field">
+					<button type="submit" class="btn search_submit btn_prim">Search</button>
+					<input type="text" name="s" class="form-control" placeholder="Keyword..">
+				</div>
+			</form>
+		</div>
+    </div>
+	<div class="page_filter_screen">
+		<div class="page_filter_contant">
+			<div class="filter_headPage">
+				<h2>Filter</h2>
+				<p>Please select your filterations and apply to update your search results.</p>
+				<button class="btn btn_close_filter"><i class="fal fa-times"></i></button>
+			</div>
+			<div class="filter_ccnt">
+				<form class="form_filter" action="#">
+					<div class="form-group">
+						<label class="fi_label">categories</label>
+						<div class="categories_check_list">
+							<div class="category_itm_check">
+								<input type="checkbox" class="checkbox_ssty">
+								<div class="txt_ch_category">cars</div>
+							</div>
+							<div class="category_itm_check">
+								<input type="checkbox" class="checkbox_ssty">
+								<div class="txt_ch_category">bikes</div>
+							</div>
+							<div class="category_itm_check">
+								<input type="checkbox" class="checkbox_ssty">
+								<div class="txt_ch_category">electronics</div>
+							</div>
+							<div class="category_itm_check">
+								<input type="checkbox" class="checkbox_ssty">
+								<div class="txt_ch_category">home furniture & appliance</div>
+							</div>
+							<div class="category_itm_check">
+								<input type="checkbox" class="checkbox_ssty">
+								<div class="txt_ch_category">sports</div>
+							</div>
+							<div class="category_itm_check">
+								<input type="checkbox" class="checkbox_ssty">
+								<div class="txt_ch_category">camping</div>
+							</div>
+							<div class="category_itm_check">
+								<input type="checkbox" class="checkbox_ssty">
+								<div class="txt_ch_category">accessories & fashion</div>
+							</div>
+							<div class="category_itm_check">
+								<input type="checkbox" class="checkbox_ssty">
+								<div class="txt_ch_category">other</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="fi_label">Type</label>
+						<select class="form-control js-select" data-placeholder="Type">
+							<option></option>
+							<option>Swap only</option>
+							<option>Swap only</option>
+							<option>Swap only</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label class="fi_label">price range</label>
+						<div class="wg-body">
+                            <div class="price-range-selector needsclick" data-min="0" data-max="50000"></div>
+                            <div class="wgpf-label">
+                                <p class="price-range-label" data-currency-sign="AED" data-cursign-before="true"></p>
+                            </div>
+                        </div>
+					</div>
+					<div class="btns_group_filter">
+						<button type="button" class="btn btn_trans">clear all</button>
+						<button type="submit" class="btn btn_prim">apply filter</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="m-overlay_filter"></div>
+	</div>
+	<div class="mobile-menu">
+	    <div class="menu-mobile">
+	        <div class="brand-area">
+	            <a href="index.html">
+	            	<img src="images/logo.svg" alt="">
+	            </a>
+	        </div>
+	        <div class="mmenu">
+		        <ul class="menu_xs">
+					<li><a href="index.html">home</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">products</a>
+						<ul class="dropdown-menu">
+							<li><a href="products.html">Cars</a></li>
+							<li><a href="products.html">Bikes</a></li>
+							<li><a href="products.html">Electronics</a></li>
+							<li><a href="products.html">sports</a></li>
+							<li><a href="products.html">Home furniture & appliance</a></li>
+							<li><a href="products.html">accessories & fashion</a></li>
+							<li><a href="products.html">camping</a></li>
+							<li><a href="products.html">other</a></li>
+						</ul>
+					</li>
+					<li><a href="about.html">about</a></li>
+					<li><a href="contact.html">contact us</a></li>
+					<li><a href="add-product.html"><i class="far fa-plus"></i>add product</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="m-overlay"></div>
+	</div><!--mobile-menu-->
+	<div class="main-wrapper header_afterLogin">
+		<header id="header">
+			<div class="container-fluid">
+				<div class="content_header d-flex justify-content-between align-items-center">
+					<div class="logo_site">
+						<a href="index.html"><img src="images/logo.svg" alt=""></a>
+					</div>
+					<div class="bk_main_menu">
+						<ul class="main_menu clearfix">
+							<li><a href="index.html">home</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">products</a>
+								<ul class="dropdown-menu">
+									<li><a href="products.html">Cars</a></li>
+									<li><a href="products.html">Bikes</a></li>
+									<li><a href="products.html">Electronics</a></li>
+									<li><a href="products.html">sports</a></li>
+									<li><a href="products.html">Home furniture & appliance</a></li>
+									<li><a href="products.html">accessories & fashion</a></li>
+									<li><a href="products.html">camping</a></li>
+									<li><a href="products.html">other</a></li>
+								</ul>
+							</li>
+							<li><a href="about.html">about</a></li>
+							<li><a href="contact.html">contact us</a></li>
+							<li><a href="add-product.html"><i class="far fa-plus"></i>add product</a></li>
+						</ul>
+					</div>
+					<div class="bk_user_menu d-flex align-items-center">
+						<ul class="user_menu clearfix">
+							<li>
+								<a href="#search"><img src="images/zoom.svg" alt=""></a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/lang.svg" alt=""></a>
+								<ul class="dropdown-menu drop_lang">
+									<li class="active"><a href="index.html">English</a></li>
+									<li><a href="index_ar.html">العربية</a></li>
+								</ul>
+							</li>
+							<li class="user_notification dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="images/notification.svg" alt=""><span class="noti_nm">2</span></a>
+								<div class="dropdown-menu drop_notification">
+									<a href="#" class="rw_notiItem notiItem_new">
+										<div class="clearfix">
+											<div class="noti_icon"><img src="images/bells.svg" alt=""></div>
+											<div class="noti_txt">
+												<p>24 minutes ago.</p>
+												<h3>The item you have been following has been published by <span>Abdullah Ahmed.</span></h3>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="rw_notiItem notiItem_new">
+										<div class="clearfix">
+											<div class="noti_icon"><img src="images/bells.svg" alt=""></div>
+											<div class="noti_txt">
+												<p>Today 3:48 PM</p>
+												<h3>You received a <span>new offer</span> on your product.</h3>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="rw_notiItem">
+										<div class="clearfix">
+											<div class="noti_icon"><img src="images/bells.svg" alt=""></div>
+											<div class="noti_txt">
+												<p>Aug 16, 2021 - 7:52 AM</p>
+												<h3>Your item has been approved and published.</h3>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="rw_notiItem">
+										<div class="clearfix">
+											<div class="noti_icon"><img src="images/bells.svg" alt=""></div>
+											<div class="noti_txt">
+												<p>Aug 16, 2021 - 7:52 AM</p>
+												<h3>Your item has been approved and published.</h3>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="rw_notiItem">
+										<div class="clearfix">
+											<div class="noti_icon"><img src="images/bells.svg" alt=""></div>
+											<div class="noti_txt">
+												<p>Aug 16, 2021 - 7:52 AM</p>
+												<h3>Your item has been approved and published.</h3>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="rw_notiItem">
+										<div class="clearfix">
+											<div class="noti_icon"><img src="images/bells.svg" alt=""></div>
+											<div class="noti_txt">
+												<p>Aug 16, 2021 - 7:52 AM</p>
+												<h3>Your item has been approved and published.</h3>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="rw_notiItem">
+										<div class="clearfix">
+											<div class="noti_icon"><img src="images/bells.svg" alt=""></div>
+											<div class="noti_txt">
+												<p>Aug 16, 2021 - 7:52 AM</p>
+												<h3>Your item has been approved and published.</h3>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="rw_notiItem">
+										<div class="clearfix">
+											<div class="noti_icon"><img src="images/bells.svg" alt=""></div>
+											<div class="noti_txt">
+												<p>Aug 16, 2021 - 7:52 AM</p>
+												<h3>Your item has been approved and published.</h3>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="rw_notiItem">
+										<div class="clearfix">
+											<div class="noti_icon"><img src="images/bells.svg" alt=""></div>
+											<div class="noti_txt">
+												<p>Aug 16, 2021 - 7:52 AM</p>
+												<h3>Your item has been approved and published.</h3>
+											</div>
+										</div>
+									</a>
+								</div>
+							</li>
+							<li class="user_afterLogin">
+								<a href="#">
+									<div class="hbk_userLogin clearfix">
+										<img src="images/avatar.png" alt="">
+										<div class="txt_userLogin">
+											<h3>Welcome back,</h3>
+											<p>Mohamed Elhady</p>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<a class="menu-trigger ml-auto">
+							<span>Menu</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header><!--header-->
+		<div class="bk_section_heroPage" style="background-image: url(images/hero.jpg);">
+			<div class="container">
+				<ol class="breadcrumb">
+				    <li class="breadcrumb-item"><a href="#">Home</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Search results</li>
+				</ol>
+			</div>
+		</div><!--bk_section_heroPage-->
+		<div class="content_swapPage">
+			<div class="container">
+				<div class="head_filterProduct d-flex align-items-center">
+					<div class="search_result_txt"><span>2,174</span>Search Results</div>
+					<div class="filterProduct_right ml-auto">
+						<form class="products_filter_search" action="#">
+							<div class="group_search_filter">
+								<input type="text" class="form-control" placeholder="Search Here ...">
+								<button type="submit" class="btn btn_prim btn_search_ft">Search</button>
+							</div>
+							<a href="#" class="btn btn_openFilter"><i class="fal fa-sliders-h"></i></a>
+						</form>
+					</div>
+				</div>
+				<div class="body_result_products">
+					<div class="products_list_rs">
+			  			<div class="row">
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  				<div class="col-lg-3 col-md-4 col-sm-6">
+			  					<div class="product_item">
+									<div class="product_thumb">
+										<a href="product.html" class="product_pic img-hover">
+											<img src="images/product.jpg" alt="">
+										</a>
+										<a href="#" class="product_favorite"><i class="fal fa-heart"></i></a>
+									</div>
+									<div class="product_cption">
+										<div class="pro_cate">
+											<a href="#">furniture</a>
+										</div>
+										<div class="pro_txt">
+											<h2><a href="product.html">Old Living Chair and dresser</a></h2>
+											<div class="pro_sale"><span>2,400</span>SAR</div>
+											<div class="pro_date">Published on 15/9/2021 </div>
+											<a href="product.html" class="btn btn_link_arrow"><i class="far fa-long-arrow-right"></i></a>
+										</div>
+									</div>
+								</div>
+			  				</div>
+			  			</div>
+			  			<ul class="pagination pagination_sty">
+						    <li class="page-item linkPrevious">
+						      <a class="page-link" href="#" aria-label="Previous">
+						        <span aria-hidden="true"><i class="far fa-long-arrow-left"></i></span>
+						      </a>
+						    </li>
+						    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+						    <li class="page-item"><a class="page-link" href="#">2</a></li>
+						    <li class="page-item"><a class="page-link" href="#">3</a></li>
+						    <li class="page-item"><a class="page-link" href="#">4</a></li>
+						    <li class="page-item"><a class="page-link" href="#">5</a></li>
+						    <li class="page-item linkNext">
+						      <a class="page-link" href="#" aria-label="Next">
+						        <span aria-hidden="true"><i class="fal fa-long-arrow-right"></i></span>
+						      </a>
+						    </li>
+						</ul>
+			  		</div>
+				</div>
+			</div>
+		</div>
+		<div class="bk_section_join">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-lg-5">
+						<div class="head_join_news">
+							<h2 data-aos="fade-up" data-aos-delay="100">join our <span>newsletter</span></h2>
+							<p data-aos="fade-up" data-aos-delay="150">Sign up to our newsletter, SWAPOOO, so you can be the first to find out the latest news and offers.</p>
+						</div>
+					</div>
+					<div class="col-lg-5">
+						<form class="form_join" action="#" data-aos="fade-up" data-aos-delay="200">
+							<input type="email" class="form-control" placeholder="Email Address">
+							<button type="submit" class="btn btn_join btn_prim">subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div><!--bk_section_join-->
+		<footer id="footer">
+			<div class="top_footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-12">
+							<div class="f_box f_box_about">
+								<div class="ft_logo">
+									<a href="index.html">
+										<img src="images/ft_logo.svg" alt="">
+									</a>
+								</div>
+								<p class="ft_about">About Website lorem ipsum dolor semit semit constrprt About Website lorem ipsum dolor semit constrprt.</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-7">
+							<div class="row">
+								<div class="col-6">
+									<div class="f_box">
+										<h2 class="ft_title">Products</h2>
+										<ul class="ft_menu clearfix">
+											<li><a href="#">home</a></li>
+											<li><a href="#">products</a></li>
+											<li><a href="#">favorites</a></li>
+											<li><a href="#">wishlist</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-6">
+									<div class="f_box">
+										<h2 class="ft_title">about us</h2>
+										<ul class="ft_menu clearfix">
+											<li><a href="#">about</a></li>
+											<li><a href="#">contact us</a></li>
+											<li><a href="#">terms and conditions</a></li>
+											<li><a href="#">privacy policy</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-5">
+							<div class="f_box f_box_social">
+								<h2 class="ft_title">Follow us on</h2>
+								<ul class="ft_social clearfix">
+									<li>
+										<a href="#" target="_blank"><img src="images/instgram.svg" alt=""></a>
+									</li>
+									<li>
+										<a href="#" target="_blank"><img src="images/whats.svg" alt=""></a>
+									</li>
+									<li>
+										<a href="#" target="_blank"><img src="images/twitter.svg" alt=""></a>
+									</li>
+									<li>
+										<a href="#" target="_blank"><img src="images/face.svg" alt=""></a>
+									</li>
+									<li>
+										<a href="#" target="_blank"><img src="images/youtube.svg" alt=""></a>
+									</li>
+									<li>
+										<a href="#" target="_blank"><img src="images/tik.svg" alt=""></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bottom_footer">
+				<div class="container">
+					<p class="copy_right">SWAPOOO © All Right Reserved 2021 </p>
+				</div>
+			</div>
+		</footer><!--footer-->
+	</div><!--main-wrapper-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/select2.full.min.js" type="text/javascript"></script>
+    <script src="js/aos.js"></script>
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+	    // ============================================================================
+	    // Price range filters init
+	    // ============================================================================
+
+	    $(function() {
+	        if(!$.fn.slider) return;
+
+	        $( ".price-range-selector" ).each(function(){
+	            var $price_label = $(this).siblings('.wgpf-label').find('.price-range-label');
+	            var cur_sign = $price_label.data('currency-sign');
+	            var cursign_before = $price_label.data('cursign-before');
+	            $(this).slider({
+	                isRTL: true,
+	                range: true,
+	                min: $(this).data('min'),
+	                max: $(this).data('max'),
+	                values: [ 0, $(this).data('max') ],
+	                slide: function( event, ui ) {
+	                    set_range_label(ui.values[ 0 ], ui.values[ 1 ]);
+	                }
+	            });
+
+	            function set_range_label(value1, value2){
+	                if(cursign_before)
+	                    $price_label.html( cur_sign + value1 + " <span>" + cur_sign + value2 + "</span> " );
+	                else
+	                    $price_label.html( value1 + cur_sign + " <span>" + value2 + cur_sign + "</span> " );
+	            }
+
+	            set_range_label($(this).data('min'), $(this).data('max'));
+	        });
+	    });
+	</script>
+</body>
+</html>	
